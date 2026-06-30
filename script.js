@@ -14,6 +14,43 @@ const observer = new IntersectionObserver(
 
 revealItems.forEach(item => observer.observe(item));
 
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('#siteNav');
+const navLinks = document.querySelectorAll('#siteNav a');
+
+function closeMenu() {
+  if (!burger || !nav) return;
+  burger.classList.remove('is-active');
+  nav.classList.remove('is-open');
+  document.body.classList.remove('menu-open');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-label', 'Открыть меню');
+}
+
+function openMenu() {
+  if (!burger || !nav) return;
+  burger.classList.add('is-active');
+  nav.classList.add('is-open');
+  document.body.classList.add('menu-open');
+  burger.setAttribute('aria-expanded', 'true');
+  burger.setAttribute('aria-label', 'Закрыть меню');
+}
+
+if (burger && nav) {
+  burger.addEventListener('click', () => {
+    const isOpen = burger.classList.contains('is-active');
+    isOpen ? closeMenu() : openMenu();
+  });
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMenu();
+  });
+}
+
 const levelsInput = document.querySelector('#levels');
 const levelsValue = document.querySelector('#levelsValue');
 const lastLevel = document.querySelector('#lastLevel');
