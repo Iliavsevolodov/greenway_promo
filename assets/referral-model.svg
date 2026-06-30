@@ -1,0 +1,46 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="40" fill="#0B0B0D"/>
+  <rect x="32" y="32" width="1136" height="756" rx="32" fill="url(#bg)" stroke="rgba(255,255,255,0.12)" stroke-opacity="0.12"/>
+  <text x="80" y="120" fill="#FFD400" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2">ИНФОГРАФИКА</text>
+  <text x="80" y="172" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Как работает магазин</text>
+  <text x="80" y="230" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">с реферальной моделью покупок</text>
+  <text x="80" y="280" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="22">Слева — обычный магазин. Справа — модель Greenway.</text>
+
+  <rect x="76" y="338" width="470" height="380" rx="28" fill="#151519" stroke="rgba(255,255,255,0.10)" stroke-opacity="0.10"/>
+  <rect x="652" y="338" width="470" height="380" rx="28" fill="#171411" stroke="#FFD400" stroke-opacity="0.38"/>
+
+  <text x="110" y="396" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Обычный магазин</text>
+  <text x="686" y="396" fill="#FFD400" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Greenway</text>
+
+  <circle cx="146" cy="456" r="18" fill="#FFD400"/>
+  <text x="178" y="465" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Ты покупаешь товар</text>
+  <circle cx="146" cy="518" r="18" fill="#FFD400"/>
+  <text x="178" y="527" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Деньги уходят на полки и рекламу</text>
+  <circle cx="146" cy="580" r="18" fill="#FFD400"/>
+  <text x="178" y="589" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Плюс посредники и наценка</text>
+  <circle cx="146" cy="642" r="18" fill="#FFD400"/>
+  <text x="178" y="651" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Ты просто уходишь с покупкой</text>
+
+  <circle cx="722" cy="456" r="18" fill="#FFD400"/>
+  <text x="754" y="465" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Ты покупаешь напрямую у магазина</text>
+  <circle cx="722" cy="518" r="18" fill="#FFD400"/>
+  <text x="754" y="527" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Пользуешься продуктом и делишься опытом</text>
+  <circle cx="722" cy="580" r="18" fill="#FFD400"/>
+  <text x="754" y="589" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Рекомендации создают товарооборот</text>
+  <circle cx="722" cy="642" r="18" fill="#FFD400"/>
+  <text x="754" y="651" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Компания делится частью прибыли</text>
+
+  <path d="M548 520H628" stroke="#FFD400" stroke-width="8" stroke-linecap="round"/>
+  <path d="M610 494L648 520L610 546" stroke="#FFD400" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="734" y="680" width="338" height="24" rx="12" fill="#2C2C33"/>
+  <rect x="734" y="680" width="284" height="24" rx="12" fill="#FFD400"/>
+  <text x="734" y="736" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Рекламный бюджет идёт людям, которые рекомендуют магазин</text>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101114"/>
+      <stop offset="1" stop-color="#080809"/>
+    </linearGradient>
+  </defs>
+</svg>
