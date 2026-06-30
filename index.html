@@ -11,6 +11,23 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <svg class="svg-sprite" aria-hidden="true" focusable="false">
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="icon-shop" viewBox="0 0 24 24"><path d="M4 10h16l-1-5H5l-1 5Z"/><path d="M6 10v10h12V10"/><path d="M9 20v-6h6v6"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8Z"/><path d="M4.5 20a7.5 7.5 0 0 1 15 0"/></symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24"><path d="M9.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"/><path d="M2.5 20a7 7 0 0 1 14 0"/><path d="M17 11a3 3 0 1 0-.5-5.95"/><path d="M18.5 20c0-2.2-1-4-2.7-5.15"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8L12 2Z"/><path d="M19 15l.8 2.7L22 18.5l-2.2.8L19 22l-.8-2.7-2.2-.8 2.2-.8L19 15Z"/></symbol>
+    <symbol id="icon-box" viewBox="0 0 24 24"><path d="M21 8.5 12 3 3 8.5l9 5.5 9-5.5Z"/><path d="M3 8.5V16l9 5 9-5V8.5"/><path d="M12 14v7"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M3.5 12h17"/><path d="M12 3c2.2 2.3 3.3 5.3 3.3 9S14.2 18.7 12 21c-2.2-2.3-3.3-5.3-3.3-9S9.8 5.3 12 3Z"/></symbol>
+    <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.5 5.8a5.2 5.2 0 0 0-7.4 0L12 6.9l-1.1-1.1a5.2 5.2 0 1 0-7.4 7.4L12 21l8.5-7.8a5.2 5.2 0 0 0 0-7.4Z"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M20.5 3.5C12 3.8 5.5 7.9 5.5 14.2c0 3.1 2.2 5.3 5.2 5.3 6.2 0 9.7-7.3 9.8-16Z"/><path d="M5.5 20c2.6-6.4 7.2-9.9 13.2-11.5"/></symbol>
+    <symbol id="icon-message" viewBox="0 0 24 24"><path d="M4 5h16v11H8l-4 4V5Z"/><path d="M8 9h8M8 13h5"/></symbol>
+    <symbol id="icon-calc" viewBox="0 0 24 24"><path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></symbol>
+  </svg>
+
   <div class="page-bg" aria-hidden="true"></div>
 
   <header class="site-header">
@@ -18,11 +35,17 @@
       <span class="brand-mark">GW</span>
       <span>Greenway Promo</span>
     </a>
-    <nav class="nav" aria-label="Навигация">
-      <a href="#about">Обо мне</a>
-      <a href="#model">Модель</a>
-      <a href="#strategy">1+1</a>
-      <a href="#contact">Прийти</a>
+
+    <button class="burger" type="button" aria-label="Открыть меню" aria-controls="siteNav" aria-expanded="false">
+      <svg class="ico ico-menu"><use href="#icon-menu"></use></svg>
+      <svg class="ico ico-close"><use href="#icon-close"></use></svg>
+    </button>
+
+    <nav class="nav" id="siteNav" aria-label="Навигация">
+      <a href="#about"><svg class="ico"><use href="#icon-user"></use></svg>Обо мне</a>
+      <a href="#model"><svg class="ico"><use href="#icon-shop"></use></svg>Модель</a>
+      <a href="#strategy"><svg class="ico"><use href="#icon-users"></use></svg>1+1</a>
+      <a href="#contact"><svg class="ico"><use href="#icon-message"></use></svg>Прийти</a>
     </nav>
   </header>
 
@@ -34,20 +57,20 @@
           <h1>Ты уже покупаешь каждый месяц. Теперь эти покупки могут работать на тебя.</h1>
           <p class="hero-text">Промо-разбор о том, как устроена реферальная модель Greenway, почему она подходит обычным людям и как стратегия 1+1 помогает расти без склада, закупок и «широкого окружения».</p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Хочу прийти на разбор</a>
+            <a class="btn btn-primary" href="#contact">Хочу прийти на разбор <svg class="ico"><use href="#icon-arrow"></use></svg></a>
             <a class="btn btn-secondary" href="#strategy">Посмотреть стратегию 1+1</a>
           </div>
         </div>
 
         <div class="hero-card reveal delay-1" aria-label="Ключевая идея сайта">
-          <div class="card-topline">Главная идея</div>
+          <div class="card-topline"><svg class="ico"><use href="#icon-spark"></use></svg> Главная идея</div>
           <div class="big-number">1+1</div>
           <p>Не нужно звать всех подряд. Нужно понять систему, сделать простой шаг и помочь следующему человеку повторить его.</p>
           <div class="mini-flow">
-            <span>Покупка</span>
-            <span>Рекомендация</span>
-            <span>Оборот</span>
-            <span>Доход</span>
+            <span><svg class="ico"><use href="#icon-shop"></use></svg>Покупка</span>
+            <span><svg class="ico"><use href="#icon-message"></use></svg>Рекомендация</span>
+            <span><svg class="ico"><use href="#icon-users"></use></svg>Оборот</span>
+            <span><svg class="ico"><use href="#icon-spark"></use></svg>Доход</span>
           </div>
         </div>
       </div>
@@ -83,6 +106,7 @@
 
         <div class="compare-grid reveal delay-1">
           <article class="compare-card muted">
+            <span class="card-icon"><svg class="ico"><use href="#icon-shop"></use></svg></span>
             <h3>Обычный магазин</h3>
             <ul>
               <li>Ты покупаешь товар.</li>
@@ -91,6 +115,7 @@
             </ul>
           </article>
           <article class="compare-card accent">
+            <span class="card-icon"><svg class="ico"><use href="#icon-users"></use></svg></span>
             <h3>Реферальная модель Greenway</h3>
             <ul>
               <li>Ты покупаешь напрямую через интернет-магазин.</li>
@@ -105,17 +130,17 @@
     <section class="section">
       <div class="container cards-3">
         <article class="feature-card reveal">
-          <span class="icon">01</span>
+          <span class="icon"><svg class="ico"><use href="#icon-box"></use></svg></span>
           <h3>Без склада и закупок</h3>
           <p>Компания уже создала продукты, сайт, приложение, склады, региональные центры, логистику и материалы. Ты работаешь через личный кабинет и ID.</p>
         </article>
         <article class="feature-card reveal delay-1">
-          <span class="icon">02</span>
+          <span class="icon"><svg class="ico"><use href="#icon-clock"></use></svg></span>
           <h3>Можно совмещать</h3>
           <p>Формат подходит для коротких рабочих промежутков: 20–60 минут в день, по дороге, в перерыв или вечером. Без резкого отказа от текущей жизни.</p>
         </article>
         <article class="feature-card reveal delay-2">
-          <span class="icon">03</span>
+          <span class="icon"><svg class="ico"><use href="#icon-globe"></use></svg></span>
           <h3>Из любой точки</h3>
           <p>Работа строится через мессенджеры, соцсети и онлайн-встречи. География не ограничивает: команда и клиенты могут быть в разных городах и странах.</p>
         </article>
@@ -131,13 +156,40 @@
         </div>
 
         <div class="steps reveal delay-1" aria-label="Схема стратегии 1+1">
-          <div class="step"><span>Ты</span></div>
+          <div class="step"><svg class="ico"><use href="#icon-user"></use></svg><span>Ты</span></div>
           <div class="line"></div>
-          <div class="step"><span>+1</span></div>
+          <div class="step"><svg class="ico"><use href="#icon-user"></use></svg><span>+1</span></div>
           <div class="line"></div>
-          <div class="step"><span>повтор</span></div>
+          <div class="step"><svg class="ico"><use href="#icon-spark"></use></svg><span>повтор</span></div>
           <div class="line"></div>
-          <div class="step"><span>сеть</span></div>
+          <div class="step"><svg class="ico"><use href="#icon-users"></use></svg><span>сеть</span></div>
+        </div>
+
+        <div class="network-panel reveal delay-2" aria-label="Анимация роста сети людей">
+          <div class="network-copy">
+            <span class="network-badge"><svg class="ico"><use href="#icon-users"></use></svg> как строится сеть</span>
+            <h3>Один человек запускает цепочку повторения</h3>
+            <p>Сначала ты показываешь систему одному человеку. Затем он повторяет действие, дальше повторяет его команда — и сеть начинает расширяться по уровням.</p>
+          </div>
+
+          <div class="network-map" id="networkMap">
+            <svg class="network-lines" viewBox="0 0 720 360" role="img" aria-label="Линии роста сети">
+              <path class="network-path path-1" d="M360 58 C360 120 240 132 200 188" />
+              <path class="network-path path-2" d="M360 58 C360 120 480 132 520 188" />
+              <path class="network-path path-3" d="M200 188 C160 230 112 242 86 306" />
+              <path class="network-path path-4" d="M200 188 C220 235 260 250 300 306" />
+              <path class="network-path path-5" d="M520 188 C500 235 460 250 420 306" />
+              <path class="network-path path-6" d="M520 188 C560 230 608 242 634 306" />
+            </svg>
+
+            <div class="person-node root" style="--x: 50%; --y: 16%; --d: 0s;"><svg class="ico"><use href="#icon-user"></use></svg><span>Ты</span></div>
+            <div class="person-node level-1" style="--x: 28%; --y: 52%; --d: .45s;"><svg class="ico"><use href="#icon-user"></use></svg><span>1</span></div>
+            <div class="person-node level-1" style="--x: 72%; --y: 52%; --d: .75s;"><svg class="ico"><use href="#icon-user"></use></svg><span>2</span></div>
+            <div class="person-node level-2" style="--x: 12%; --y: 84%; --d: 1.1s;"><svg class="ico"><use href="#icon-user"></use></svg><span>3</span></div>
+            <div class="person-node level-2" style="--x: 42%; --y: 84%; --d: 1.3s;"><svg class="ico"><use href="#icon-user"></use></svg><span>4</span></div>
+            <div class="person-node level-2" style="--x: 58%; --y: 84%; --d: 1.5s;"><svg class="ico"><use href="#icon-user"></use></svg><span>5</span></div>
+            <div class="person-node level-2" style="--x: 88%; --y: 84%; --d: 1.7s;"><svg class="ico"><use href="#icon-user"></use></svg><span>6</span></div>
+          </div>
         </div>
 
         <div class="growth-grid reveal delay-2">
@@ -159,6 +211,7 @@
           <p>Выбери количество уровней. Расчёт показывает простой принцип геометрического роста, когда каждый участник приводит одного человека, который повторяет действие.</p>
         </div>
         <div class="calc-box">
+          <span class="card-icon"><svg class="ico"><use href="#icon-calc"></use></svg></span>
           <label for="levels">Количество уровней: <strong id="levelsValue">5</strong></label>
           <input id="levels" type="range" min="1" max="10" value="5" />
           <div class="calc-result">
@@ -182,10 +235,10 @@
           <p>Главный навык — пользоваться, разбираться, делиться опытом и помогать человеку пройти такой же путь.</p>
         </div>
         <div class="benefits reveal delay-1">
-          <div><strong>Партнёрство вместо начальников</strong><span>Доход зависит от созданного оборота, а не от должности или стажа.</span></div>
-          <div><strong>Без дипломов и специальных навыков</strong><span>Есть пошаговый план, наставник, чаты и готовые материалы.</span></div>
-          <div><strong>Продукт ежедневного спроса</strong><span>Дом, уход, здоровье, красота, гигиена — люди покупают это регулярно.</span></div>
-          <div><strong>Масштабируемость</strong><span>Ты работаешь не только с личными рекомендациями, но и с сетью по уровням.</span></div>
+          <div><svg class="ico"><use href="#icon-spark"></use></svg><strong>Партнёрство вместо начальников</strong><span>Доход зависит от созданного оборота, а не от должности или стажа.</span></div>
+          <div><svg class="ico"><use href="#icon-message"></use></svg><strong>Без дипломов и специальных навыков</strong><span>Есть пошаговый план, наставник, чаты и готовые материалы.</span></div>
+          <div><svg class="ico"><use href="#icon-leaf"></use></svg><strong>Продукт ежедневного спроса</strong><span>Дом, уход, здоровье, красота, гигиена — люди покупают это регулярно.</span></div>
+          <div><svg class="ico"><use href="#icon-users"></use></svg><strong>Масштабируемость</strong><span>Ты работаешь не только с личными рекомендациями, но и с сетью по уровням.</span></div>
         </div>
       </div>
     </section>
@@ -216,12 +269,12 @@
           <h2>Продукты, которые нужны каждый день</h2>
           <p>Greenway — это не история про редкий товар, который человеку нужен один раз. Это продукция для дома, здоровья, красоты, ухода, семьи и личной гигиены. Такие категории люди покупают регулярно, поэтому здесь проще объяснить ценность через личный опыт.</p>
           <div class="tags">
-            <span>Дом</span>
-            <span>Уход</span>
-            <span>Красота</span>
-            <span>Здоровье</span>
-            <span>Гигиена</span>
-            <span>Семья</span>
+            <span><svg class="ico"><use href="#icon-shop"></use></svg>Дом</span>
+            <span><svg class="ico"><use href="#icon-heart"></use></svg>Уход</span>
+            <span><svg class="ico"><use href="#icon-spark"></use></svg>Красота</span>
+            <span><svg class="ico"><use href="#icon-leaf"></use></svg>Здоровье</span>
+            <span><svg class="ico"><use href="#icon-box"></use></svg>Гигиена</span>
+            <span><svg class="ico"><use href="#icon-users"></use></svg>Семья</span>
           </div>
         </div>
       </div>
@@ -241,7 +294,7 @@
         <h2>Хочешь посмотреть, как стратегия 1+1 работает на реальных примерах?</h2>
         <p>Приходи на разбор. Я покажу, как устроена модель, с чего начать без опыта и какие действия помогают выйти на первые результаты.</p>
         <div class="hero-actions center">
-          <a class="btn btn-primary" href="https://instagram.com/ilya_vsevolodov" target="_blank" rel="noopener">Написать мне в Instagram</a>
+          <a class="btn btn-primary" href="https://instagram.com/ilya_vsevolodov" target="_blank" rel="noopener">Написать мне в Instagram <svg class="ico"><use href="#icon-arrow"></use></svg></a>
           <a class="btn btn-secondary" href="https://t.me/ilya_vsevolodov" target="_blank" rel="noopener">Написать в Telegram</a>
         </div>
         <p class="small-note">Сайт носит информационный характер. Доход не гарантирован и зависит от личных действий, обучения, активности команды и товарооборота.</p>
