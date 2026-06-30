@@ -1,0 +1,55 @@
+<svg width="1200" height="820" viewBox="0 0 1200 820" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="820" rx="40" fill="#0B0B0D"/>
+  <rect x="32" y="32" width="1136" height="756" rx="32" fill="#121216" stroke="rgba(255,255,255,0.12)" stroke-opacity="0.12"/>
+  <text x="76" y="112" fill="#FFD400" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2">КАТЕГОРИИ</text>
+  <text x="76" y="168" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">То, что люди покупают каждый месяц</text>
+  <text x="76" y="222" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="22">Продукты ежедневного спроса проще рекомендовать, потому что они уже нужны людям.</text>
+
+  <g transform="translate(86 294)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="60" y="79" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">⌂</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Дом</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Уборка, текстиль, бытовые решения</text>
+  </g>
+
+  <g transform="translate(450 294)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="58" y="80" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">♥</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Уход</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Косметика, шампуни, уход за собой</text>
+  </g>
+
+  <g transform="translate(814 294)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="56" y="80" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">★</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Красота</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Парфюмерия и продукты красоты</text>
+  </g>
+
+  <g transform="translate(86 520)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="54" y="80" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">+</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Здоровье</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">БАДы, витамины и wellness-линейки</text>
+  </g>
+
+  <g transform="translate(450 520)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="56" y="80" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">□</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Гигиена</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Паста, средства для тела и быта</text>
+  </g>
+
+  <g transform="translate(814 520)">
+    <rect width="300" height="180" rx="28" fill="#17171B" stroke="#FFD400" stroke-opacity="0.36"/>
+    <circle cx="70" cy="70" r="34" fill="#FFD400"/>
+    <text x="50" y="80" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="800">☺</text>
+    <text x="40" y="130" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="800">Семья</text>
+    <text x="40" y="160" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="20">Товары, которые нужны дома регулярно</text>
+  </g>
+</svg>
