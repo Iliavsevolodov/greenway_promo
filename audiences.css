@@ -1,0 +1,228 @@
+.audience-router {
+  background: linear-gradient(180deg, rgba(255, 212, 0, 0.08), rgba(255,255,255,0.015));
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.audience-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px;
+  border-radius: 28px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 28px 80px rgba(0,0,0,0.28);
+  transition: transform .28s ease, border-color .28s ease, background .28s ease;
+}
+
+.audience-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255, 212, 0, .55);
+  background: linear-gradient(135deg, rgba(255, 212, 0, 0.18), rgba(255,255,255,0.07));
+}
+
+.audience-card strong {
+  display: block;
+  font-size: 28px;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.audience-card span:not(.audience-emoji) {
+  color: #b9bac4;
+  font-size: 16px;
+}
+
+.audience-card em {
+  display: inline-flex;
+  width: fit-content;
+  padding: 10px 14px;
+  border-radius: 999px;
+  color: #0b0b0d;
+  background: #ffd400;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.audience-emoji {
+  display: grid;
+  place-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background: #ffd400;
+  font-size: 34px;
+  box-shadow: 0 18px 54px rgba(255, 212, 0, 0.22);
+}
+
+.audience-wide {
+  grid-column: span 3;
+  min-height: 200px;
+}
+
+.persona-hero {
+  min-height: calc(100vh - 72px);
+  display: grid;
+  align-items: center;
+  padding-top: 72px;
+}
+
+.persona-hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.persona-card,
+.persona-step,
+.persona-proof,
+.persona-plan {
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(20px);
+  border-radius: 28px;
+  box-shadow: 0 28px 80px rgba(0,0,0,0.34);
+}
+
+.persona-card {
+  min-height: 440px;
+  padding: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(255, 212, 0, 0.18), rgba(255,255,255,0.07));
+}
+
+.persona-icon {
+  display: grid;
+  place-items: center;
+  width: 92px;
+  height: 92px;
+  border-radius: 28px;
+  background: #ffd400;
+  font-size: 48px;
+}
+
+.persona-card strong {
+  display: block;
+  color: #ffd400;
+  font-size: clamp(68px, 12vw, 150px);
+  line-height: .8;
+  letter-spacing: -.1em;
+}
+
+.persona-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.persona-list div,
+.persona-proof,
+.persona-plan {
+  padding: 22px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.055);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.persona-list b,
+.persona-proof b,
+.persona-plan b {
+  color: #ffd400;
+}
+
+.persona-columns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.persona-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.persona-step {
+  padding: 24px;
+  min-height: 210px;
+}
+
+.persona-step span {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 22px;
+  border-radius: 16px;
+  color: #0b0b0d;
+  background: #ffd400;
+  font-weight: 950;
+}
+
+.back-link {
+  color: #ffd400;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.burger-symbol,
+.burger-x {
+  font-size: 26px;
+  font-weight: 950;
+  line-height: 1;
+}
+
+.burger-x { display: none; }
+.burger.is-active .burger-symbol { display: none; }
+.burger.is-active .burger-x { display: block; }
+
+@media (max-width: 980px) {
+  .audience-grid,
+  .persona-hero-grid,
+  .persona-columns,
+  .persona-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .audience-wide {
+    grid-column: auto;
+  }
+
+  .persona-card {
+    min-height: 320px;
+  }
+}
+
+@media (max-width: 720px) {
+  .audience-card {
+    min-height: 220px;
+    padding: 24px;
+  }
+
+  .persona-hero {
+    min-height: auto;
+    padding-top: 54px;
+  }
+
+  .persona-card,
+  .persona-step,
+  .persona-proof,
+  .persona-plan {
+    padding: 24px;
+  }
+}
