@@ -1,0 +1,35 @@
+<svg width="1200" height="860" viewBox="0 0 1200 860" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="860" rx="40" fill="#0B0B0D"/>
+  <rect x="32" y="32" width="1136" height="796" rx="32" fill="#121216" stroke="rgba(255,255,255,0.12)" stroke-opacity="0.12"/>
+  <text x="76" y="112" fill="#FFD400" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" letter-spacing="2">СХЕМА РОСТА</text>
+  <text x="76" y="168" fill="white" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="800">Если приглашать даже 1 человека в месяц</text>
+  <text x="76" y="222" fill="#B9BAC4" font-family="Arial, Helvetica, sans-serif" font-size="22">Сеть покупателей может постепенно расти по принципу повторения.</text>
+
+  <path d="M600 280C600 330 470 350 380 430" stroke="#FFD400" stroke-width="6" stroke-linecap="round"/>
+  <path d="M600 280C600 330 730 350 820 430" stroke="#FFD400" stroke-width="6" stroke-linecap="round"/>
+  <path d="M380 430C300 490 210 525 160 620" stroke="#FFD400" stroke-width="5" stroke-linecap="round"/>
+  <path d="M380 430C420 500 490 530 520 620" stroke="#FFD400" stroke-width="5" stroke-linecap="round"/>
+  <path d="M820 430C780 500 710 530 680 620" stroke="#FFD400" stroke-width="5" stroke-linecap="round"/>
+  <path d="M820 430C900 490 990 525 1040 620" stroke="#FFD400" stroke-width="5" stroke-linecap="round"/>
+
+  <circle cx="600" cy="260" r="62" fill="white"/>
+  <text x="575" y="252" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="800">ТЫ</text>
+  <text x="551" y="286" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">месяц 1</text>
+
+  <circle cx="380" cy="450" r="50" fill="#FFD400"/>
+  <circle cx="820" cy="450" r="50" fill="#FFD400"/>
+  <text x="360" y="456" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">+1</text>
+  <text x="800" y="456" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800">+1</text>
+
+  <circle cx="160" cy="640" r="42" fill="#FFF2A8"/>
+  <circle cx="520" cy="640" r="42" fill="#FFF2A8"/>
+  <circle cx="680" cy="640" r="42" fill="#FFF2A8"/>
+  <circle cx="1040" cy="640" r="42" fill="#FFF2A8"/>
+  <text x="151" y="646" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">1</text>
+  <text x="511" y="646" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">1</text>
+  <text x="671" y="646" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">1</text>
+  <text x="1031" y="646" fill="#0B0B0D" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800">1</text>
+
+  <rect x="88" y="724" width="1024" height="60" rx="20" fill="#17171B" stroke="rgba(255,255,255,0.12)" stroke-opacity="0.12"/>
+  <text x="124" y="762" fill="#F3F4F6" font-family="Arial, Helvetica, sans-serif" font-size="24">Смысл не в толпе людей. Смысл в одном повторяемом действии каждый месяц.</text>
+</svg>
