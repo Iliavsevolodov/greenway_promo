@@ -42,55 +42,10 @@ function applyOnePersonMonthCopy() {
   const bigNumber = document.querySelector('.big-number');
   if (bigNumber) bigNumber.textContent = '1/мес';
 
-  const heroCardText = document.querySelector('.hero-card p');
+  const heroCardText = document.querySelector('.pulse-card p, .hero-card p');
   if (heroCardText) {
     heroCardText.textContent = 'Не нужно искать толпу людей. Даже если приглашать одного человека в месяц и помогать ему повторять это действие, сеть покупателей может постепенно расти.';
   }
-
-  const strategySection = document.querySelector('#strategy');
-  if (strategySection) {
-    const eyebrow = strategySection.querySelector('.eyebrow');
-    const title = strategySection.querySelector('.section-heading h2');
-    const text = strategySection.querySelector('.section-heading p');
-
-    if (eyebrow) eyebrow.textContent = '1 человек в месяц';
-    if (title) title.textContent = 'Рост начинается не с толпы, а с одного нового человека.';
-    if (text) {
-      text.textContent = 'Смысл простой: ты приглашaешь хотя бы одного человека в месяц, показываешь ему магазин и помогаешь сделать то же самое. Так создаётся повторяемое действие, из которого постепенно растёт сеть покупателей и товарооборот.';
-    }
-
-    const stepLabels = strategySection.querySelectorAll('.step span');
-    const labels = ['Ты', '+1 в месяц', 'повтор', 'сеть'];
-    stepLabels.forEach((label, index) => {
-      if (labels[index]) label.textContent = labels[index];
-    });
-
-    const networkBadge = strategySection.querySelector('.network-badge');
-    const networkTitle = strategySection.querySelector('.network-copy h3');
-    const networkText = strategySection.querySelector('.network-copy p');
-
-    if (networkBadge) networkBadge.textContent = 'как растёт сеть покупателей';
-    if (networkTitle) networkTitle.textContent = 'Один человек в месяц может запустить цепочку повторения';
-    if (networkText) {
-      networkText.textContent = 'Ты показываешь магазин одному человеку. Потом помогаешь ему повторить этот же шаг. Когда действие повторяется из месяца в месяц, сеть покупателей начинает расти по уровням.';
-    }
-  }
-
-  const calcSection = document.querySelector('.calculator-section');
-  if (calcSection) {
-    const title = calcSection.querySelector('h2');
-    const text = calcSection.querySelector('p:not(.eyebrow):not(.calc-note)');
-    if (title) title.textContent = 'Посмотри, как растёт сеть, если приглашать 1 человека в месяц';
-    if (text) {
-      text.textContent = 'Калькулятор показывает принцип роста: каждый новый человек может повторить действие и пригласить ещё одного. Это не обещание дохода, а понятная демонстрация логики сети.';
-    }
-  }
-
-  document.querySelectorAll('.final-card h2').forEach(title => {
-    title.textContent = title.textContent
-      .replace('модель «1 человек в месяц» работает', 'модель “1 человек в месяц” работает')
-      .replace('стратегия 1+1 работает', 'модель “1 человек в месяц” работает');
-  });
 }
 
 applyOnePersonMonthCopy();
@@ -173,3 +128,34 @@ if (levelsInput) {
   levelsInput.addEventListener('input', updateCalculator);
   updateCalculator();
 }
+
+function animateCount(el) {
+  const end = Number(el.dataset.count || 0);
+  const duration = Number(el.dataset.duration || 1400);
+  const startTime = performance.now();
+
+  function tick(now) {
+    const progress = Math.min((now - startTime) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const value = Math.round(end * eased);
+    el.textContent = formatNumber(value);
+    if (progress < 1) requestAnimationFrame(tick);
+  }
+
+  requestAnimationFrame(tick);
+}
+
+const counters = document.querySelectorAll('.count-number');
+const counterObserver = new IntersectionObserver(
+  entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.6 }
+);
+
+counters.forEach(counter => counterObserver.observe(counter));
