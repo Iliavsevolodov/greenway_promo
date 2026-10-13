@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#0c2530">
+  <meta name="theme-color" content="#f0f8f4">
   <meta name="description" content="Курс новичка Greenway: 5 дней онлайн-обучения с 20 по 24 октября 2026 года. Бизнес-модель, маркетинг-план, мышление, продукт и личный бренд.">
   <meta property="og:title" content="Курс новичка Greenway — 20–24 октября">
-  <meta property="og:description" content="Пять дней. Пять ключевых тем. Понятная система старта.">
+  <meta property="og:description" content="Пять дней, чтобы разобраться в системе, продукте и первых действиях.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <title>Курс новичка Greenway — 20–24 октября 2026</title>
@@ -314,7 +314,220 @@
     *,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important}
     .reveal{opacity:1;transform:none}
   }
-  </style>
+  
+/* v3 — Editorial redesign; intentionally overrides the initial theme. */
+:root{--dark:#102833;--navy:#13333e;--teal:#117e88;--turquoise:#8ff0dc;--cream:#f5f8f6;--pale:#eff8f5;--line:#dfebe7;--text:#172e35;--muted:#647980;--shadow:0 12px 55px rgba(11,39,45,.07)}
+body{background:#f5f8f6;letter-spacing:-.01em}
+.container{width:min(1180px,calc(100% - 52px))}
+.section{padding:104px 0}
+.site-header{background:rgba(247,250,248,.92);border-bottom:1px solid #e7efec;box-shadow:0 7px 28px rgba(12,47,45,.025)}
+.nav{height:75px}
+.brand,.nav-links{color:#12323a}
+.brand-mark{border:0;border-radius:12px;background:#123540}
+.brand-copy{font-size:18px;letter-spacing:-.07em}
+.brand-copy small{color:#6c8c90;letter-spacing:.25em}
+.nav-links{font-size:12px;gap:27px}
+.nav-links a{transition:color .2s}
+.nav-links a:hover{color:#078d91}
+.button{border-radius:999px;font-size:13px;padding:16px 24px;transition:transform .25s ease,box-shadow .25s ease,background .25s ease}
+.button-primary{background:#91ebdc;color:#0c3237;box-shadow:none}
+.button-primary:hover{background:#b8f7ed;box-shadow:0 12px 30px rgba(18,128,128,.12)}
+.nav-cta{padding:13px 18px;background:#123843;color:#fff;box-shadow:none}
+.nav-cta:hover{background:#0a7883;color:#fff}
+.menu-toggle{color:#15353f;border-color:#d9e9e6}
+.eyebrow{letter-spacing:.16em;font-size:10px;font-weight:800}
+.section-title{font-weight:600;line-height:1.12;letter-spacing:-.075em;font-size:clamp(35px,4.6vw,61px);margin-top:15px}
+.section-head{align-items:end;margin-bottom:40px}
+.section-head p{line-height:1.75;font-size:13px;color:#60777b}
+.accent{color:#087f87}
+.v3-title-color{color:#168c91}
+.reveal{transform:translateY(18px);transition-duration:.55s}
+.v3-hero{background:radial-gradient(ellipse 70% 90% at 85% 35%,#ddf8f1 0,transparent 70%),#f0f8f4;position:relative;overflow:hidden;border-bottom:1px solid #dfebe6;color:#102d37}
+.v3-hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:60px;padding:83px 0 48px}
+.v3-hero-copy{position:relative;z-index:1}
+.v3-overline{display:flex;align-items:center;gap:11px;color:#0d7f88;font-size:10px;font-weight:800;letter-spacing:.17em;white-space:nowrap}
+.v3-dot{width:8px;height:8px;border-radius:50%;background:#16a7a5;box-shadow:0 0 0 5px rgba(13,169,162,.13);display:inline-block;flex-shrink:0}
+.v3-overline-dash{height:1px;width:18px;background:#a9c8c5}
+.v3-hero h1{font-family:Unbounded,Manrope,sans-serif;font-size:clamp(43px,5.25vw,76px);line-height:1.12;letter-spacing:-.085em;font-weight:650;margin:30px 0 24px;max-width:740px}
+.v3-hero h1 span{color:#13a39e}
+.v3-lead{color:#597178;font-size:clamp(14px,1.45vw,17px);line-height:1.75;max-width:515px;margin:0}
+.v3-hero-actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:33px}
+.v3-hero-actions .button-primary{background:#103742;color:#fff}
+.v3-hero-actions .button-primary:hover{background:#0c7881;color:#fff}
+.v3-btn-ghost{background:transparent;color:#173b43;border:1px solid #a9c9c7}
+.v3-btn-ghost:hover{border-color:#168d93;background:#e8f7f3}
+.v3-hero-facts{display:flex;gap:29px;align-items:center;flex-wrap:wrap;margin-top:46px;padding-top:23px;border-top:1px solid #c8e0db}
+.v3-hero-facts>div{display:flex;flex-direction:column;gap:7px}
+.v3-hero-facts strong{font:550 23px/1.1 Unbounded,sans-serif;letter-spacing:-.07em}
+.v3-hero-facts span{font-size:10px;font-weight:600;color:#6a898a}
+.v3-art{aspect-ratio: .86;max-height:560px;min-height:420px;background:linear-gradient(135deg,#0f2c38 10%,#18515a 62%,#155e64 100%);border-radius:12px;color:#e5fffb;position:relative;overflow:visible;isolation:isolate;box-shadow:0 35px 65px rgba(9,56,62,.16);border:8px solid #fff}
+.v3-art::before{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.15);pointer-events:none;z-index:2}
+.v3-art-shine{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 47%,rgba(59,202,188,.4),transparent 54%),repeating-linear-gradient(0deg,transparent 0 60px,rgba(255,255,255,.015) 61px 62px);overflow:hidden}
+.v3-art-top{position:absolute;top:39px;left:38px;right:38px;display:flex;justify-content:space-between;gap:14px;font-size:9px;letter-spacing:.14em;color:#a4c9c9;font-weight:700;z-index:2}
+.v3-art-center{position:absolute;inset:0;overflow:hidden}
+.v3-art-glyph{position:absolute;left:14px;top:37%;font:500 clamp(130px,16vw,245px)/1 Unbounded,sans-serif;letter-spacing:-.16em;color:rgba(188,252,239,.11)}
+.v3-leaf-svg{width:75%;height:78%;position:absolute;right:-4%;top:14%;filter:drop-shadow(18px 20px 20px rgba(0,0,0,.13))}
+.v3-art-label{position:absolute;bottom:23%;left:8%;font:600 clamp(19px,2.1vw,29px)/1.25 Unbounded,sans-serif;letter-spacing:-.06em;z-index:1}
+.v3-art-bottom{position:absolute;bottom:34px;left:38px;right:38px;display:flex;justify-content:space-between;gap:12px;font-size:10px;font-weight:700;letter-spacing:.19em;color:#b2d7d6;z-index:2}
+.v3-art-bottom b{color:#79e9d7;font-size:17px;font-weight:500;vertical-align:middle}
+.v3-sticker{position:absolute;right:-25px;bottom:100px;background:#dbfff6;color:#103840;padding:16px 19px;transform:rotate(6deg);display:flex;flex-direction:column;gap:4px;box-shadow:0 13px 40px rgba(7,39,43,.13);z-index:3}
+.v3-sticker span{font:600 27px/1 Unbounded,sans-serif;letter-spacing:-.06em}
+.v3-sticker small{font-weight:800;font-size:10px;letter-spacing:.12em}
+.v3-hero-bottom{display:flex;justify-content:space-between;gap:15px;padding-bottom:22px;color:#78918d;font-size:10px;letter-spacing:.14em;font-weight:700;text-transform:uppercase}
+.v3-hero-bottom a{color:#1a666e}
+.marquee{background:#d4f8ed;border:0;padding:11px 0}
+.marquee-track{justify-content:space-around;letter-spacing:.13em;color:#13535b;font-size:10px}
+.about{background:#f5f8f6}
+.about-layout{gap:64px}
+.about-description{color:#61777a;font-size:15px}
+.question{border-radius:13px;border-color:#e4eeeb;box-shadow:none;min-height:157px}
+.question p{font-size:13px;line-height:1.55}
+.question:hover{box-shadow:0 12px 30px rgba(12,40,47,.07)}
+.format{background:#e9f5f1;padding:76px 0}
+.format-wrap{grid-template-columns:1.4fr repeat(3,1fr)}
+.format-intro{border-radius:11px;background:#123640;padding:27px}
+.format-intro h2{font-size:clamp(25px,2.65vw,32px);line-height:1.32}
+.format-intro:after{font-size:200px;right:-15px}
+.format-item{border-radius:11px;border-color:#d8e8e3;min-height:218px;padding:28px 23px}
+.format-item .big{font-size:clamp(22px,2.5vw,33px);color:#068b92}
+.format-item p{font-size:12px}
+.v3-program{background:#fff}
+.v3-program-header{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:45px}
+.v3-program-header p{max-width:330px;color:#62797e;font-size:14px;line-height:1.75;margin-bottom:5px}
+.v3-program-grid{display:grid;grid-template-columns:1.18fr .82fr;gap:26px;align-items:start}
+.v3-lesson-stack{display:flex;flex-direction:column;border-top:1px solid #d9e8e4}
+.v3-lesson{border-bottom:1px solid #d9e8e4;scroll-margin-top:100px}
+.v3-lesson summary{list-style:none;display:grid;grid-template-columns:57px 1fr 38px;align-items:center;gap:18px;padding:23px 8px 23px 0;cursor:pointer;transition:padding .2s ease,color .2s ease}
+.v3-lesson summary::-webkit-details-marker{display:none}
+.v3-lesson summary:hover{padding-left:10px;color:#067f87}
+.v3-lesson-num{font:600 34px/1 Unbounded,sans-serif;color:#adcdc5;letter-spacing:-.09em;transition:color .2s}
+.v3-lesson[open] .v3-lesson-num{color:#0c9e9a}
+.v3-lesson-main small{font-size:10px;letter-spacing:.09em;color:#7b9795;font-weight:800;text-transform:uppercase;display:block;margin-bottom:10px}
+.v3-lesson-main strong{font:600 clamp(18px,2.08vw,25px)/1.3 Unbounded,sans-serif;letter-spacing:-.06em}
+.v3-lesson-plus{font-size:28px;line-height:1;width:38px;height:38px;border:1px solid #d6e7e1;border-radius:50%;display:grid;place-items:center;color:#237d81;transition:transform .2s ease,background .2s}
+.v3-lesson[open] .v3-lesson-plus{transform:rotate(45deg);background:#e2f8ee;border-color:transparent}
+.v3-lesson-expanded{padding:0 22px 28px 75px}
+.v3-lesson-expanded p{color:#637b7d;font-size:13px;line-height:1.75;margin:0 0 18px;max-width:470px}
+.v3-lesson-expanded ul{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+.v3-lesson-expanded li{font-size:13px;font-weight:700;line-height:1.5;position:relative;padding-left:19px}
+.v3-lesson-expanded li:before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;border-radius:50%;background:#19b3ab}
+.v3-lesson-out{margin-top:22px;padding:14px 17px;background:#e9f8f3;border-left:3px solid #3ccbbf;display:grid;gap:7px}
+.v3-lesson-out span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:#70908a;font-weight:800}
+.v3-lesson-out strong{font-size:12px}
+.v3-program-aside{position:sticky;top:108px}
+.v3-program-aside-inner{background:radial-gradient(circle at 90% 28%,#1f6670,#113540 65%);color:#fff;min-height:590px;display:flex;flex-direction:column;justify-content:space-between;padding:37px 34px;position:relative;overflow:hidden}
+.v3-program-aside-inner::before{content:"";position:absolute;right:-160px;top:120px;width:400px;height:400px;border:1px solid rgba(255,255,255,.14);border-radius:50%;box-shadow:0 0 0 65px rgba(255,255,255,.024),0 0 0 125px rgba(255,255,255,.015)}
+.v3-mini-label{font-size:10px;letter-spacing:.18em;color:#9dcfc9;font-weight:800;z-index:1}
+.v3-program-aside strong{font:600 clamp(25px,2.9vw,43px)/1.27 Unbounded,sans-serif;letter-spacing:-.07em;z-index:1}
+.v3-program-aside strong i{color:#82eada;font-style:normal}
+.v3-program-aside p{font-size:13px;line-height:1.9;color:#b2d2d4;max-width:300px;z-index:1}
+.v3-program-aside-foot{display:flex;justify-content:space-between;gap:12px;font-size:11px;letter-spacing:.18em;color:#8fe7db;font-weight:800;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);z-index:1}
+.v3-program-after{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:27px;font-size:12px;color:#72888a}
+.v3-text-link{border:0;border-bottom:1px solid #188a8e;border-radius:0;background:none;padding:9px 0;color:#0e8c91;font-weight:800;font-size:12px}
+.results{background:#102e37}
+.result-grid{gap:10px}
+.result-card{border-radius:8px;min-height:190px;background:rgba(255,255,255,.035)}
+.result-card h3{font-size:16px}
+.result-card p{font-size:12px}
+.join{background:#f5f8f6}
+.step{border-radius:11px;box-shadow:none}
+.step-number{color:#b0dcd5}
+.condition{border-radius:9px;background:#e8f5ef}
+.faq{background:#eaf4f0}
+.faq summary{font-size:14px}
+.final{background:linear-gradient(110deg,#0d3740,#135a62);padding:90px 0}
+.final h2{font-size:clamp(33px,4.7vw,59px)}
+footer{background:#0e2d36}
+.floating-cta{background:rgba(12,44,50,.92)}
+dialog{border-radius:19px;overflow-y:auto}
+.v3-modal{padding:39px;color:#15323b}
+.v3-modal-top{display:flex;justify-content:space-between;align-items:start}
+.v3-modal h2{font:600 clamp(25px,3vw,34px)/1.2 Unbounded,sans-serif;letter-spacing:-.07em;margin:20px 0 14px}
+.v3-modal>p{color:#617b7f;font-size:13px;line-height:1.8;margin:0}
+.v3-message-preview{background:#edf7f3;border:1px solid #d9eae4;padding:18px 19px;border-radius:11px;margin:23px 0;color:#30555b;font-size:13px;line-height:1.8}
+.v3-modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.v3-modal-actions .button{padding:15px 12px;font-size:12px;white-space:nowrap}
+.v3-btn-copy{background:#fff;border:1px solid #cbded9;color:#19464e}
+.v3-btn-copy:hover{background:#eef8f5}
+.v3-modal-footnote{margin-top:17px!important;font-size:11px!important;line-height:1.7!important}
+@media(max-width:1100px){
+  .v3-hero-grid{gap:35px}
+  .v3-hero h1{font-size:clamp(42px,5vw,64px)}
+  .v3-art{min-height:400px}
+  .format-wrap{grid-template-columns:1.3fr repeat(3,1fr)}
+  .format-item{min-height:216px}
+}
+@media(max-width:760px){
+ .container{width:min(100% - 36px,580px)}
+ .section{padding:72px 0}
+ .site-header{background:rgba(247,250,248,.97)}
+ .nav{height:65px}
+ .brand-copy{font-size:16px}
+ .nav-links{background:#f5faf7;top:65px;color:#173b43}
+ .nav-links a{border-bottom:1px solid #d7e8e3}
+ .menu-toggle{color:#113c42;border-color:#d4e7e2}
+ .v3-hero-grid{grid-template-columns:1fr;gap:22px;padding:53px 0 26px}
+ .v3-overline{font-size:9px;letter-spacing:.10em;gap:8px}
+ .v3-overline-dash{width:10px}
+ .v3-hero h1{font-size:clamp(36px,9.2vw,57px);margin:23px 0 18px;letter-spacing:-.083em;line-height:1.13}
+ .v3-lead{font-size:14px;line-height:1.75}
+ .v3-hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:25px}
+ .v3-hero-actions .button{padding:14px 8px;font-size:11px}
+ .v3-hero-facts{gap:0;justify-content:space-between;margin-top:30px;padding-top:20px}
+ .v3-hero-facts strong{font-size:18px}
+ .v3-hero-facts span{font-size:9px}
+ .v3-art{height:325px;min-height:0;max-height:none;aspect-ratio:auto;border-width:5px;width:100%;margin-top:7px}
+ .v3-art-top{top:24px;left:23px;right:23px;font-size:8px}
+ .v3-art:before{inset:12px}
+ .v3-art-glyph{font-size:125px;top:29%;left:9px}
+ .v3-leaf-svg{width:61%;height:88%;top:5%;right:8%}
+ .v3-art-label{font-size:21px;left:8%;bottom:25%}
+ .v3-art-bottom{bottom:22px;left:23px;right:23px}
+ .v3-sticker{right:-9px;bottom:58px;padding:11px}
+ .v3-sticker span{font-size:20px}
+ .v3-sticker small{font-size:8px}
+ .v3-hero-bottom{padding-bottom:17px}
+ .v3-program-header{display:block;margin-bottom:24px}
+ .v3-program-header p{margin-top:20px;font-size:13px}
+ .v3-program-grid{grid-template-columns:1fr;gap:25px}
+ .v3-lesson summary{grid-template-columns:43px 1fr 32px;gap:10px;padding:18px 0}
+ .v3-lesson-num{font-size:27px}
+ .v3-lesson-main small{font-size:9px;margin-bottom:7px}
+ .v3-lesson-main strong{font-size:clamp(16px,4.2vw,21px)}
+ .v3-lesson-plus{height:31px;width:31px;font-size:22px}
+ .v3-lesson-expanded{padding:0 4px 21px 53px}
+ .v3-lesson-expanded p,.v3-lesson-expanded li{font-size:12px}
+ .v3-program-aside{position:static}
+ .v3-program-aside-inner{min-height:260px;padding:24px}
+ .v3-program-aside strong{font-size:28px;margin:15px 0}
+ .v3-program-aside p{font-size:12px}
+ .v3-program-aside-foot{margin-top:20px}
+ .v3-program-after{margin-top:19px}
+ .section-title{font-size:clamp(31px,8vw,44px)}
+ .section-head p{font-size:13px}
+ .format-wrap{grid-template-columns:repeat(2,1fr)}
+ .format-intro{grid-column:1/-1}
+ .format-item{min-height:170px;padding:20px 17px}
+ .format-item .big{font-size:24px}
+ .format-item:last-child{grid-column:1/-1;min-height:120px}
+ .question{border-radius:11px}
+ .result-card{min-height:168px}
+ .final{padding:76px 0}
+ .footer-inner{gap:10px}
+ .v3-modal{padding:25px}
+ .v3-modal-actions{grid-template-columns:1fr}
+ .v3-modal h2{font-size:26px}
+ .floating-cta .button{border-radius:999px}
+}
+@media(max-width:360px){
+ .v3-overline{font-size:8px}
+ .v3-hero h1{font-size:35px}
+ .v3-hero-facts strong{font-size:15px}
+ .v3-art{height:300px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none}}
+
+</style>
 </head>
 <body>
   <header class="site-header" id="top">
@@ -332,32 +545,50 @@
     <div class="progress" id="scrollProgress" aria-hidden="true"></div>
   </header>
   <main>
-    <section class="hero" aria-labelledby="heroTitle">
-      <div class="container hero-layout">
-        <div>
-          <div class="hero-tag"><span class="live-dot"></span> Онлайн-обучение · 20–24 октября 2026</div>
-          <h1 id="heroTitle" class="display">ТВОЯ<br>ТОЧКА<br><em>СТАРТА.</em></h1>
-          <p class="hero-description">Курс новичка Greenway — пять дней, чтобы понять систему, познакомиться с продуктом и составить свой план первых действий. Без хаоса и бесконечных поисков ответа на вопрос «с чего начать?».</p>
-          <div class="hero-buttons">
-            <a class="button button-primary" href="#program">Программа курса <span class="arrow" aria-hidden="true">↗</span></a>
-            <button class="button button-outline open-form" type="button">Хочу на курс <span class="arrow" aria-hidden="true">→</span></button>
+    
+    <section class="v3-hero" aria-labelledby="heroTitle">
+      <div class="container v3-hero-grid">
+        <div class="v3-hero-copy">
+          <div class="v3-overline"><span class="v3-dot"></span> GREENWAY GLOBAL <span class="v3-overline-dash"></span> 20–24 ОКТЯБРЯ 2026</div>
+          <h1 id="heroTitle">СИЛЬНЫЙ СТАРТ.<br><span>ПОНЯТНАЯ</span><br>СИСТЕМА.</h1>
+          <p class="v3-lead">5 дней, чтобы разобраться в партнёрском бизнесе Greenway, познакомиться с продуктом и понять, какие шаги делать дальше.</p>
+          <div class="v3-hero-actions">
+            <a href="#program" class="button button-primary">Смотреть программу <span aria-hidden="true">↗</span></a>
+            <button type="button" class="button v3-btn-ghost open-form">Хочу на курс <span aria-hidden="true">→</span></button>
           </div>
-          <div class="hero-footer" aria-label="Ключевые характеристики курса">
+          <div class="v3-hero-facts" aria-label="Основная информация">
             <div><strong>05</strong><span>дней обучения</span></div>
-            <div><strong>05</strong><span>ключевых тем</span></div>
             <div><strong>30–40</strong><span>минут урок</span></div>
+            <div><strong>ONLINE</strong><span>практика и эфиры</span></div>
           </div>
         </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="orbital"></div><span class="orbit-small"></span>
-          <div class="planet"><svg viewBox="0 0 180 180" fill="none"><circle cx="90" cy="90" r="58" stroke="#dffefa" stroke-width="1.7" opacity=".55"/><circle cx="90" cy="90" r="38" stroke="#dffefa" stroke-width="1" opacity=".5"/><path d="M91 29 107 90 91 149 73 90 91 29Z" fill="#e0fff6"/><path d="m91 29 16 61-16 59V29Z" fill="#146875"/><path d="M30 90h120M91 29v120" stroke="#dbfff7" stroke-width="1.3" opacity=".7"/><circle cx="90" cy="90" r="5" fill="#dffefa"/><path d="M54 54 126 126M126 54 54 126" stroke="#dcfff7" opacity=".28"/></svg></div>
-          <div class="orbit-date"><small>Твой первый шаг</small><strong>20–24</strong><small>октября · 2026</small></div>
-          <div class="orbit-note"><strong>5 / 5</strong><span>Каждый день — новая тема и понятный следующий шаг</span></div>
-          <div class="orbit-seal">Новое<br>начало ✦</div>
+        <div class="v3-art" aria-label="20–24 октября, курс новичка, пять дней обучения">
+          <div class="v3-art-shine" aria-hidden="true"></div>
+          <div class="v3-art-top"><span>EDUCATION / 2026</span><span>GREENWAY GLOBAL</span></div>
+          <div class="v3-art-center">
+            <span class="v3-art-glyph">05</span>
+            <svg class="v3-leaf-svg" viewBox="0 0 320 360" fill="none" aria-hidden="true">
+              <path d="M154 318C161 252 156 190 190 119" stroke="#B6FFF0" stroke-width="3" stroke-linecap="round"/>
+              <path d="M184 130C180 73 206 39 273 29C275 93 251 130 184 130Z" fill="#7AE2CE"/>
+              <path d="M187 128C216 89 239 64 268 35" stroke="#E2FFF7" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M162 213C118 170 108 123 134 72C184 113 196 156 162 213Z" fill="#49C3BD"/>
+              <path d="M160 207C154 166 141 120 134 81" stroke="#DEFFF7" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M159 268C185 215 226 200 280 213C252 275 215 299 159 268Z" fill="#A0EEE0"/>
+              <path d="M170 268C205 251 240 230 271 215" stroke="#EBFFF9" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M158 299C115 263 84 253 39 267C73 311 111 326 158 299Z" fill="#239E9E"/>
+              <path d="M143 298C105 286 75 276 45 268" stroke="#D9FFF3" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M198 109C205 72 228 50 265 39M159 210C141 161 136 136 133 86M179 264C219 254 242 231 264 220" stroke="#0F7B82" stroke-opacity=".2" stroke-width="2"/>
+            </svg>
+            <span class="v3-art-label">НОВАЯ<br>ТОЧКА<br>РОСТА.</span>
+          </div>
+          <div class="v3-art-bottom"><span>START HERE</span><span>01 / 05 <b>↗</b></span></div>
+          <div class="v3-sticker"><span>20—24</span><small>ОКТЯБРЯ</small></div>
         </div>
       </div>
+      <div class="container v3-hero-bottom"><span>Пять тем. Один маршрут.</span><a href="#about">Листай вниз <span aria-hidden="true">↓</span></a></div>
     </section>
-    <div class="marquee" aria-hidden="true"><div class="container marquee-track"><span>Понимай</span><i></i><span>Применяй</span><i></i><span>Развивайся</span><i></i><span>Действуй</span></div></div>
+
+<div class="marquee" aria-hidden="true"><div class="container marquee-track"><span>Понимай</span><i></i><span>Применяй</span><i></i><span>Развивайся</span><i></i><span>Действуй</span></div></div>
     <section class="section about" id="about">
       <div class="container about-layout">
         <div class="reveal">
@@ -381,34 +612,94 @@
         <div class="format-item"><div class="big">ONLINE</div><div><p>Обучение онлайн</p><small>Уроки, эфиры, задания и обратная связь</small></div></div>
       </div>
     </section>
-    <section class="section program" id="program">
+    
+    <section class="section v3-program" id="program">
       <div class="container">
-        <div class="section-head reveal"><div><div class="eyebrow accent">20 — 24 октября</div><h2 class="section-title">Пять дней.<br><span class="accent">Пять шагов</span> к старту.</h2></div><p>Нажимай на дни и изучай содержание каждого урока. Программа выстроена так, чтобы следующий шаг опирался на предыдущий.</p></div>
-        <div class="program-outer reveal">
-          <div class="program-tabs" role="tablist" aria-label="Дни курса" id="lessonTabs">
-            <button class="program-tab" type="button" id="tab-1" role="tab" aria-controls="lessonPanel" aria-selected="true" tabindex="0" data-day="1"><span class="tab-num">01</span><span class="tab-copy"><strong>20 октября</strong><span>Точка старта</span></span></button>
-            <button class="program-tab" type="button" id="tab-2" role="tab" aria-controls="lessonPanel" aria-selected="false" tabindex="-1" data-day="2"><span class="tab-num">02</span><span class="tab-copy"><strong>21 октября</strong><span>Вознаграждение</span></span></button>
-            <button class="program-tab" type="button" id="tab-3" role="tab" aria-controls="lessonPanel" aria-selected="false" tabindex="-1" data-day="3"><span class="tab-num">03</span><span class="tab-copy"><strong>22 октября</strong><span>Мышление</span></span></button>
-            <button class="program-tab" type="button" id="tab-4" role="tab" aria-controls="lessonPanel" aria-selected="false" tabindex="-1" data-day="4"><span class="tab-num">04</span><span class="tab-copy"><strong>23 октября</strong><span>Продукт и продажи</span></span></button>
-            <button class="program-tab" type="button" id="tab-5" role="tab" aria-controls="lessonPanel" aria-selected="false" tabindex="-1" data-day="5"><span class="tab-num">05</span><span class="tab-copy"><strong>24 октября</strong><span>Личный бренд</span></span></button>
-          </div>
-          <div class="program-panel" id="lessonPanel" role="tabpanel" aria-labelledby="tab-1" tabindex="0" aria-live="polite">
-            <div class="program-info">
-              <div class="badge" id="lessonBadge">Урок 01 · 20 октября</div>
-              <h3 id="lessonTitle">ТОЧКА СТАРТА</h3>
-              <p class="intro" id="lessonIntro">Разберёмся в индустрии, компании Greenway и твоём первом шаге.</p>
-              <ul class="lesson-points" id="lessonPoints"><li>История индустрии и Greenway</li><li>Ценности компании и команда</li><li>Правила взаимодействия</li><li>Постановка цели и личной точки старта</li></ul>
-              <div class="program-bottom" id="lessonBottom">ПОНИМАНИЕ ОСНОВ · ЯСНОСТЬ ЦЕЛИ · ПЛАН ДЕЙСТВИЙ</div>
-            </div>
-            <div class="program-visual" data-visual="1" id="lessonVisual" aria-hidden="true">
-              <svg id="lessonGraphic" viewBox="0 0 240 240" fill="none"><circle cx="120" cy="120" r="86" stroke="#f4fffa" stroke-width="3"/><circle cx="120" cy="120" r="66" stroke="#f4fffa" stroke-opacity=".5" stroke-width="1.5"/><path d="m120 43 27 76-27 78-27-78 27-76Z" fill="#ecfffb"/><path d="m120 43 27 76-27 78V43Z" fill="#1d8490"/><circle cx="120" cy="120" r="8" fill="#fff"/><path d="M120 19v24m0 154v24M19 120h24m154 0h24" stroke="#f4fffa" stroke-width="3"/></svg>
-              <span class="visual-label">YOUR START / 01</span>
-            </div>
-          </div>
+        <div class="v3-program-header reveal">
+          <div><span class="eyebrow">01 / СОДЕРЖАНИЕ КУРСА</span><h2 class="section-title">ПЯТЬ ДНЕЙ,<br><span class="v3-title-color">ПЯТЬ КЛЮЧЕВЫХ ТЕМ.</span></h2></div>
+          <p>Никаких бесконечных вебинаров. Каждый день — одна тема, важные инструменты и понятный следующий шаг.</p>
         </div>
+        <div class="v3-program-grid">
+          <div class="v3-lesson-stack reveal">
+      <details class="v3-lesson" open>
+        <summary aria-label="Урок 01: Точка старта">
+          <span class="v3-lesson-num">01</span>
+          <span class="v3-lesson-main"><small>20 октября · Урок 1</small><strong>Точка старта</strong></span>
+          <span class="v3-lesson-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="v3-lesson-expanded">
+          <p>Начнём с главного: как устроена индустрия и где твоя точка старта.</p>
+          <ul><li>История индустрии и Greenway</li><li>Ценности компании и команда</li><li>Правила взаимодействия</li><li>Постановка личной цели и точки старта</li></ul>
+          <div class="v3-lesson-out"><span>После урока</span><strong>Понимание основ + ясность цели</strong></div>
+        </div>
+      </details>
+
+      <details class="v3-lesson" >
+        <summary aria-label="Урок 02: Система вознаграждения">
+          <span class="v3-lesson-num">02</span>
+          <span class="v3-lesson-main"><small>21 октября · Урок 2</small><strong>Система вознаграждения</strong></span>
+          <span class="v3-lesson-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="v3-lesson-expanded">
+          <p>Без сложных слов разберёмся в маркетинг-плане и логике развития.</p>
+          <ul><li>Уровни дохода и структура сети</li><li>Ключевые показатели</li><li>Навыки, необходимые для роста</li><li>Как выстроить личную карту движения</li></ul>
+          <div class="v3-lesson-out"><span>После урока</span><strong>Понимание маркетинг-плана + карта роста</strong></div>
+        </div>
+      </details>
+
+      <details class="v3-lesson" >
+        <summary aria-label="Урок 03: Мышление и установки">
+          <span class="v3-lesson-num">03</span>
+          <span class="v3-lesson-main"><small>22 октября · Урок 3</small><strong>Мышление и установки</strong></span>
+          <span class="v3-lesson-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="v3-lesson-expanded">
+          <p>Что мешает действовать и как выстраивать уверенную коммуникацию.</p>
+          <ul><li>Страхи и ограничивающие убеждения</li><li>Масштабирование</li><li>Коммуникация и уверенность</li><li>Инструменты личного развития</li></ul>
+          <div class="v3-lesson-out"><span>После урока</span><strong>Инструменты работы с установками</strong></div>
+        </div>
+      </details>
+
+      <details class="v3-lesson" >
+        <summary aria-label="Урок 04: Продукт и продажи">
+          <span class="v3-lesson-num">04</span>
+          <span class="v3-lesson-main"><small>23 октября · Урок 4</small><strong>Продукт и продажи</strong></span>
+          <span class="v3-lesson-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="v3-lesson-expanded">
+          <p>От знакомства с линейкой до грамотного общения с клиентом.</p>
+          <ul><li>Ценность и уникальность продукта</li><li>Целевая аудитория</li><li>Продвижение и способы презентации</li><li>Привлечение клиентов и повторные покупки</li></ul>
+          <div class="v3-lesson-out"><span>После урока</span><strong>Понимание продукта + инструменты продвижения</strong></div>
+        </div>
+      </details>
+
+      <details class="v3-lesson" >
+        <summary aria-label="Урок 05: Личный бренд">
+          <span class="v3-lesson-num">05</span>
+          <span class="v3-lesson-main"><small>24 октября · Урок 5</small><strong>Личный бренд</strong></span>
+          <span class="v3-lesson-plus" aria-hidden="true">+</span>
+        </summary>
+        <div class="v3-lesson-expanded">
+          <p>Люди выбирают людей: учимся проявляться и выстраивать доверие.</p>
+          <ul><li>Позиционирование</li><li>Контент и проявленность</li><li>Формирование доверия</li><li>Привлечение клиентов и партнёров через личный бренд</li></ul>
+          <div class="v3-lesson-out"><span>После урока</span><strong>Основа личного бренда + план действий</strong></div>
+        </div>
+      </details>
+          </div>
+          <aside class="v3-program-aside reveal">
+            <div class="v3-program-aside-inner">
+              <span class="v3-mini-label">КУРС НОВИЧКА / 2026</span>
+              <strong>ЗНАНИЯ<br><i>→</i> ДЕЙСТВИЯ.</strong>
+              <p>Обучение — это не только информация. Наша задача — помочь тебе разобраться, попробовать и построить основу для самостоятельной работы.</p>
+              <div class="v3-program-aside-foot"><span>ONLINE</span><span>20—24.10</span></div>
+            </div>
+          </aside>
+        </div>
+        <div class="v3-program-after reveal"><span>5 уроков · 30–40 минут каждый</span><button type="button" class="v3-text-link open-form">Присоединиться к обучению ↗</button></div>
       </div>
     </section>
-    <section class="section results" id="result">
+
+<section class="section results" id="result">
       <div class="container">
         <div class="section-head reveal"><div><div class="eyebrow" style="color:#8be6d9">Твой результат</div><h2 class="section-title">Не просто знания.<br><span style="color:#81e3d8">Понятно, что дальше.</span></h2></div><p>После прохождения курса у тебя будет не набор несвязанных фактов, а основа для самостоятельных первых шагов.</p></div>
         <div class="result-grid reveal">
@@ -454,116 +745,73 @@
   </main>
   <footer><div class="container footer-inner"><div><div class="footer-brand">Greenway · Курс новичка</div><small>Информационная страница партнёрского курса. Не является официальным сайтом Greenway Global.</small></div><small>20—24 октября 2026 · <a href="#top">Вернуться наверх ↑</a></small></div></footer>
   <div class="floating-cta" id="floatingCta"><button type="button" class="button button-primary open-form">Присоединиться к курсу <span class="arrow" aria-hidden="true">↗</span></button></div>
+  
   <dialog id="signupDialog" aria-labelledby="dialogTitle">
-    <div class="modal-inner">
-      <div class="modal-head"><div><div class="eyebrow accent">Твоя заявка</div><h2 id="dialogTitle">Хочу на курс новичка</h2></div><button type="button" class="modal-close" id="closeDialog" aria-label="Закрыть окно">×</button></div>
-      <form id="signupForm">
-        <div class="field"><label for="personName">Как тебя зовут?</label><input id="personName" name="personName" placeholder="Твоё имя" maxlength="70" autocomplete="given-name" required></div>
-        <div class="field"><label for="personContact">Твой Telegram или телефон</label><input id="personContact" name="personContact" placeholder="@username или +7..." maxlength="100" autocomplete="off" required></div>
-        <label class="consent"><input type="checkbox" id="consent" required><span>Согласен(на) использовать указанные данные для формирования моего сообщения организатору курса. Данные не сохраняются на сайте и не отправляются на сервер.</span></label>
-        <button class="button modal-action" type="submit">Подготовить сообщение <span class="arrow" aria-hidden="true">↗</span></button>
-        <p class="modal-note">Организатор пока не указал прямой контакт для записи. После подготовки ты сможешь отправить сообщение в Telegram партнёру, который поделился ссылкой.</p>
-      </form>
-      <div id="nextStep" class="next-step" aria-live="polite">
-        <strong>Сообщение готово!</strong>
-        <p>Скопируй его и отправь партнёру Greenway, который пригласил тебя. Или выбери получателя в Telegram.</p>
-        <button class="button" id="copyRequest" type="button">Скопировать текст</button>
-        <a class="button button-light" id="shareRequest" target="_blank" rel="noopener noreferrer" href="https://t.me/">Открыть Telegram ↗</a>
+    <div class="v3-modal">
+      <div class="v3-modal-top">
+        <span class="eyebrow">СТАРТ 20 ОКТЯБРЯ</span>
+        <button type="button" class="modal-close" id="closeDialog" aria-label="Закрыть">×</button>
       </div>
+      <h2 id="dialogTitle">ГОТОВ(А) НАЧАТЬ?</h2>
+      <p>Для участия в курсе напиши партнёру Greenway, который пригласил тебя. Мы уже подготовили короткое сообщение — осталось отправить.</p>
+      <div class="v3-message-preview">Здравствуйте! Хочу присоединиться к курсу новичка Greenway 20–24 октября. Подскажите, пожалуйста, как зарегистрироваться и выполнить условия участия.</div>
+      <div class="v3-modal-actions">
+        <a id="shareRequest" href="https://t.me/share/url" target="_blank" rel="noopener noreferrer" class="button button-primary">Открыть Telegram <span aria-hidden="true">↗</span></a>
+        <button id="copyRequest" type="button" class="button v3-btn-copy">Скопировать текст</button>
+      </div>
+      <p class="v3-modal-footnote">Контакт организатора пока не указан. Telegram предложит выбрать получателя; либо отправь скопированный текст тому, кто поделился этой страницей. Заявка не сохраняется на сайте.</p>
     </div>
   </dialog>
-  <script>
-    (() => {
-      "use strict";
-      // Если появится адрес организатора, укажи его здесь, например https://t.me/username
-      const CONTACT_URL = "";
-      const graphics = {
-        1: '<circle cx="120" cy="120" r="86" stroke="#f4fffa" stroke-width="3"/><circle cx="120" cy="120" r="66" stroke="#f4fffa" stroke-opacity=".5" stroke-width="1.5"/><path d="m120 43 27 76-27 78-27-78 27-76Z" fill="#ecfffb"/><path d="m120 43 27 76-27 78V43Z" fill="#1d8490"/><circle cx="120" cy="120" r="8" fill="#fff"/><path d="M120 19v24m0 154v24M19 120h24m154 0h24" stroke="#f4fffa" stroke-width="3"/>',
-        2: '<path d="M33 201h176M47 179V142h31v37M91 179v-69h31v69M135 179V83h31v96M179 179V51h30v128" stroke="#eafff8" stroke-width="5" stroke-linejoin="round"/><path d="m46 127 46-34 43 15 54-66" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><path d="m168 43 21-1-1 21" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>',
-        3: '<path d="M121 47c-38-30-87 4-78 42-27 16-23 57 4 66-6 32 28 50 54 33 7 17 35 17 41-2 27 14 55-6 52-35 25-14 26-44 4-57 9-37-31-62-63-44" stroke="#f3fffd" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><path d="M120 51v130M94 88c25 5 26 24 26 34m26-36c-17 10-27 20-26 35M74 127c24-2 36 6 46 29m51-20c-28-7-39 8-51 22M75 76c-1 20 10 27 27 30m49-28c-18 10-22 15-23 34" stroke="#f3fffd" stroke-width="4" stroke-linecap="round" opacity=".8"/>',
-        4: '<rect x="91" y="55" width="76" height="141" rx="19" fill="#e6fff6"/><rect x="102" y="39" width="54" height="22" rx="7" fill="#f5fffb"/><rect x="106" y="25" width="46" height="18" rx="5" fill="#0c7280" stroke="#e6fff6" stroke-width="3"/><path d="M94 92h70M94 159h70" stroke="#9dcfc5" stroke-width="2"/><path d="M118 138c0-19 17-29 30-28-1 18-9 27-30 28Zm1-2c9-7 17-15 28-24" stroke="#198c90" stroke-width="4" stroke-linecap="round"/><path d="M44 177c2-21 17-38 42-40-4 25-21 38-42 40Zm9-4c13-19 22-24 34-31M176 178c4-23 21-34 38-38-2 21-17 37-38 38Z" fill="none" stroke="#edfff8" stroke-width="5" stroke-linecap="round"/>',
-        5: '<rect x="50" y="40" width="142" height="161" rx="13" fill="none" stroke="#f1fffa" stroke-width="5"/><circle cx="122" cy="96" r="27" stroke="#f1fffa" stroke-width="5"/><path d="M77 171c0-29 19-46 45-46s45 17 45 46" stroke="#f1fffa" stroke-width="5" stroke-linecap="round"/><path d="M185 49l13-24m-3 40 25-12m-33 26 27 6" stroke="#f1fffa" stroke-width="4" stroke-linecap="round"/>'
-      };
-      const lessons = {
-        1:{date:"20 октября",title:"ТОЧКА СТАРТА",intro:"Первое знакомство с индустрией, компанией Greenway и твоей личной точкой старта.",points:["История индустрии и Greenway","Ценности компании и команда","Правила взаимодействия","Постановка цели и личной точки старта"],end:"ПОНИМАНИЕ ОСНОВ · ЯСНОСТЬ ЦЕЛИ · ПЛАН ДЕЙСТВИЙ",tag:"YOUR START"},
-        2:{date:"21 октября",title:"СИСТЕМА ВОЗНАГРАЖДЕНИЯ",intro:"Маркетинг-план без сложных формулировок: как устроена система и на что ориентироваться.",points:["Уровни дохода и структура сети","Ключевые показатели","Навыки, которые нужны для роста","Как сформировать свою карту движения"],end:"МАРКЕТИНГ-ПЛАН · ПОКАЗАТЕЛИ · КАРТА РОСТА",tag:"YOUR GROWTH"},
-        3:{date:"22 октября",title:"МЫШЛЕНИЕ И УСТАНОВКИ",intro:"Разбираем внутренние ограничения, которые мешают проявляться, общаться и действовать.",points:["Страхи и ограничивающие убеждения","Мышление роста и масштабирование","Коммуникация с людьми","Инструменты личного развития"],end:"УСТАНОВКИ · ОБЩЕНИЕ · ЛИЧНОЕ РАЗВИТИЕ",tag:"YOUR MIND"},
-        4:{date:"23 октября",title:"ПРОДУКТ И ПРОДАЖИ",intro:"Учимся понимать продуктовую линейку Greenway и рассказывать о её ценности людям.",points:["Ценность и особенности продукта","Целевая аудитория","Инструменты продвижения","Привлечение клиентов и долгосрочные отношения"],end:"ПРОДУКТ · АУДИТОРИЯ · КЛИЕНТЫ",tag:"YOUR PRODUCT"},
-        5:{date:"24 октября",title:"ЛИЧНЫЙ БРЕНД",intro:"Почему люди выбирают не только продукт, но и тех, кому доверяют.",points:["Позиционирование и экспертность","Контент и проявленность","Как формируется доверие","Привлечение клиентов и партнёров через личный бренд"],end:"ПОЗИЦИОНИРОВАНИЕ · КОНТЕНТ · ДОВЕРИЕ",tag:"YOUR BRAND"}
-      };
-      const tabs = Array.from(document.querySelectorAll(".program-tab"));
-      const panel=document.getElementById("lessonPanel");
-      function setDay(day,focus=false){
-        const item=lessons[day]; if(!item)return;
-        tabs.forEach(b=>{const active=b.dataset.day===String(day);b.setAttribute("aria-selected",String(active));b.tabIndex=active?0:-1;if(active&&focus)b.focus({preventScroll:true});});
-        panel.setAttribute("aria-labelledby","tab-"+day);
-        document.getElementById("lessonBadge").textContent="Урок 0"+day+" · "+item.date;
-        document.getElementById("lessonTitle").textContent=item.title;
-        document.getElementById("lessonIntro").textContent=item.intro;
-        document.getElementById("lessonPoints").replaceChildren(...item.points.map(p=>{const li=document.createElement("li");li.textContent=p;return li}));
-        document.getElementById("lessonBottom").textContent=item.end;
-        document.getElementById("lessonVisual").dataset.visual=String(day);
-        document.getElementById("lessonGraphic").innerHTML=graphics[day];
-        document.querySelector(".visual-label").textContent=item.tag+" / 0"+day;
-      }
-      tabs.forEach((button,index)=>{
-        button.addEventListener("click",()=>setDay(Number(button.dataset.day)));
-        button.addEventListener("keydown",e=>{
-          if(!["ArrowRight","ArrowLeft","ArrowDown","ArrowUp","Home","End"].includes(e.key))return;
-          e.preventDefault();
-          let newIndex=index;
-          if(e.key==="ArrowRight"||e.key==="ArrowDown")newIndex=(index+1)%tabs.length;
-          if(e.key==="ArrowLeft"||e.key==="ArrowUp")newIndex=(index+tabs.length-1)%tabs.length;
-          if(e.key==="Home")newIndex=0;
-          if(e.key==="End")newIndex=tabs.length-1;
-          setDay(Number(tabs[newIndex].dataset.day),true);
-        });
-      });
-      const toggle=document.getElementById("menuToggle"),links=document.getElementById("navLinks");
-      toggle.addEventListener("click",()=>{const open=links.classList.toggle("open");toggle.setAttribute("aria-expanded",String(open));toggle.textContent=open?"×":"☰";toggle.setAttribute("aria-label",open?"Закрыть меню":"Открыть меню");});
-      links.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>{links.classList.remove("open");toggle.setAttribute("aria-expanded","false");toggle.textContent="☰";}));
-      const dialog=document.getElementById("signupDialog");
-      document.querySelectorAll(".open-form").forEach(button=>button.addEventListener("click",()=>{if(!dialog.open)dialog.showModal();}));
-      document.getElementById("closeDialog").addEventListener("click",()=>dialog.close());
-      dialog.addEventListener("click",e=>{if(e.target===dialog)dialog.close()});
-      let requestMessage="";
-      const nextStep=document.getElementById("nextStep");
-      document.getElementById("signupForm").addEventListener("submit",e=>{
-        e.preventDefault();
-        const name=document.getElementById("personName").value.trim().replace(/\s+/g," ");
-        const contact=document.getElementById("personContact").value.trim();
-        if(name.length<2||contact.length<3){alert("Проверь имя и контакт для связи.");return;}
-        requestMessage="Здравствуйте! Хочу присоединиться к курсу новичка Greenway 20–24 октября 2026.\nМеня зовут: "+name+"\nМой контакт: "+contact+"\nПодскажите, пожалуйста, дальнейшие шаги для участия.";
-        nextStep.classList.add("visible");
-        const share = "https://t.me/share/url?text="+encodeURIComponent(requestMessage);
-        document.getElementById("shareRequest").href=CONTACT_URL ? CONTACT_URL : share;
-        document.getElementById("shareRequest").textContent=CONTACT_URL ? "Написать организатору ↗" : "Выбрать получателя в Telegram ↗";
-        nextStep.scrollIntoView({block:"nearest",behavior:matchMedia("(prefers-reduced-motion:reduce)").matches?"instant":"smooth"});
-      });
-      document.getElementById("copyRequest").addEventListener("click",async e=>{
-        if(!requestMessage)return;
-        try{
-          if(navigator.clipboard?.writeText){await navigator.clipboard.writeText(requestMessage);}
-          else{const tmp=document.createElement("textarea");tmp.value=requestMessage;tmp.style.position="fixed";tmp.style.opacity="0";document.body.append(tmp);tmp.select();if(!document.execCommand("copy"))throw Error("copy");tmp.remove();}
-          e.currentTarget.textContent="Скопировано ✓";
-        }catch{window.prompt("Скопируй сообщение:",requestMessage);}
-      });
-      const progress=document.getElementById("scrollProgress");
-      const floating=document.getElementById("floatingCta");
-      let ticking=false;
-      function updateScroll(){
-        const max=document.documentElement.scrollHeight-innerHeight;
-        progress.style.width=(max>0?Math.min(100,scrollY/max*100):0)+"%";
-        floating.classList.toggle("hidden",scrollY<300);
-        ticking=false;
-      }
-      window.addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(updateScroll);ticking=true;}},{passive:true});
-      updateScroll();
-      if("IntersectionObserver" in window && !matchMedia("(prefers-reduced-motion:reduce)").matches){
-        const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in-view");observer.unobserve(e.target);}})},{threshold:.08});
-        document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-      }else{document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in-view"));}
-    })();
-  </script>
+
+
+<script>
+(() => {
+  "use strict";
+  const CONTACT_URL = ""; // Укажи https://t.me/username, если известен официальный контакт организатора.
+  const requestText = "Здравствуйте! Хочу присоединиться к курсу новичка Greenway 20–24 октября 2026. Подскажите, пожалуйста, как зарегистрироваться и выполнить условия участия.";
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const nav = document.getElementById("navLinks"), toggle = document.getElementById("menuToggle");
+  toggle.addEventListener("click", () => {
+    const open=nav.classList.toggle("open");
+    toggle.setAttribute("aria-expanded",String(open));
+    toggle.textContent=open?"×":"☰";
+    toggle.setAttribute("aria-label",open?"Закрыть меню":"Открыть меню");
+  });
+  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => {
+    nav.classList.remove("open"); toggle.setAttribute("aria-expanded","false"); toggle.textContent="☰";
+  }));
+  const accordions=[...document.querySelectorAll(".v3-lesson")];
+  accordions.forEach(d => d.addEventListener("toggle", () => {
+    if(d.open) accordions.filter(item=>item!==d&&item.open).forEach(item=>item.open=false);
+  }));
+  const dialog=document.getElementById("signupDialog");
+  document.querySelectorAll(".open-form").forEach(el=>el.addEventListener("click",()=>dialog.showModal()));
+  document.getElementById("closeDialog").addEventListener("click",()=>dialog.close());
+  dialog.addEventListener("click",e=>{if(e.target===dialog) dialog.close()});
+  const telegram=document.getElementById("shareRequest");
+  telegram.href=CONTACT_URL || "https://t.me/share/url?text="+encodeURIComponent(requestText);
+  if(CONTACT_URL) telegram.textContent="Написать организатору ↗";
+  document.getElementById("copyRequest").addEventListener("click",async e=>{
+    try{
+      await navigator.clipboard.writeText(requestText);
+      e.currentTarget.textContent="Скопировано ✓";
+    } catch {window.prompt("Скопируй сообщение:",requestText)}
+  });
+  const progress=document.getElementById("scrollProgress"), floating=document.getElementById("floatingCta");
+  let ticking=false;
+  function scrollUpdate(){
+    const available=Math.max(1,document.documentElement.scrollHeight-innerHeight);
+    progress.style.width=(Math.min(100,scrollY/available*100))+"%";
+    floating.classList.toggle("hidden",scrollY<320);
+    ticking=false;
+  }
+  window.addEventListener("scroll",()=>{if(!ticking){requestAnimationFrame(scrollUpdate);ticking=true}},{passive:true});
+  scrollUpdate();
+  if("IntersectionObserver" in window&&!reduced){
+    const observer=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in-view");observer.unobserve(e.target)}})},{threshold:.07});
+    document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
+  } else document.querySelectorAll(".reveal").forEach(el=>el.classList.add("in-view"));
+})();
+</script>
 </body>
 </html>
